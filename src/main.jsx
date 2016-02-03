@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
 const links= [
-  { to: '/c3', label: 'Chapter 3' },
+  { to: '/blog', label: 'Blog' },
 ]
 
 const Menu= ({locale, setLocale}) =>

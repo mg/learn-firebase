@@ -82,7 +82,7 @@ function pushPosts(db) {
   )
 }
 
-export default class Chapter2 extends React.Component {
+export default class Blog extends React.Component {
   render() {
     return <div></div>
   }
