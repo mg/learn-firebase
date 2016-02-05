@@ -163,3 +163,31 @@ export function removedPost$(db) {
 
 // use the .indexOn rule for props you want to order on prop in production
 // use .valueOn when using orderByValue in production
+
+// Authenticaiton
+// ref.onAuth({uid, provider} => ())
+// ref.offAuth(cb)
+// ref.getAuth() => synchronous method
+
+// Loging in
+// const handler= (error, authData) => {}
+// 
+// ref.authWithCustomToken(TOKEN, handler)
+// ref.authAnonymously(handler)
+// ref.authWithPassword({email, password}, handler)
+// ref.authWithOAuthPopup(PROVIDER, handler)
+// ref.authWithOAuthRedirect(PROVIDER, handler)
+
+// Log out
+// ref.unauth()
+
+// Connection status
+// ref= new Firebase('https://myapp.firebaseio.com/.info/connected')
+// ref.on('value', snapshot => {
+//   if(snapshot.val()) => connected
+//   else => disconnected
+// })
+
+// Get timestamp with each op to detect last connection
+// var userLastOnlineRef = new Firebase("https://<YOUR-FIREBASE-APP>.firebaseio.com/users/joe/lastOnline");
+// userLastOnlineRef.onDisconnect().set(Firebase.ServerValue.TIMESTAMP);
